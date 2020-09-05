@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body,html{
+    background-color: #fff;
+    height: 100%;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+.wrapper{
+    width: 550px;
+    height: 100%;
+    margin:0 auto;
+    border: 1px solid #eee;
+    background-color: #eee;
+
+}
+.header{
+    height: 40px;
+    background-color: #666;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+.chat{
+    height: calc(100% - 100px);
+    line-height: 30px;
+    padding: 10px;
+    overflow: auto;
+}
+.chat p{
+    display: inline-block;
+    /* height: 30px; */
+    font-size: 14px;
+    columns: #666;
+    border-radius: 7px;
+    vertical-align: middle;
+    padding: 5px;
+    max-width: 320px;
+}
+.chat p::after{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 5px solid transparent;
+    top: 15px;
+}
+.self{
+    float: right;
+    width: 400px;
+
+}
+.self p{
+    background-color: lawngreen;
+    position: relative;
+    float: right;
+    right: 5px;
+
+}
+.self p::after{
+    border-left: 5px solid lawngreen;
+    right: -10px;
+
+}
+.robert{
+    float: left;
+    width: 400px;
+}
+.robert p{
+    background-color: #fff;
+    position: relative;
+}
+.robert p::after{
+    border-right: 5px solid #fff;
+    left: -10px;
+
+}
+img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.self img{
+    float: right;
+}
+.send{
+    width: 100%;
+    height: 40px;
+    background-color:#ccc ;
+    bottom: 0;   
+}
+.send input{
+    height: 30px;
+    margin-left: 5px;
+    width: 85%;
+    margin: 5px;
+}
+.send button{
+    width:63px;
+    height: 33px;
+    margin: 5px 5px 0px -5px;
+    background-color: lawngreen;
+}
